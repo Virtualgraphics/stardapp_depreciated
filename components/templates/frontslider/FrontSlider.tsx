@@ -22,23 +22,23 @@ export default function FrontSlider() {
                 <SwiperSlide>
                     // eslint-disable-next-line @next/next/no-img-element
                     <Image
-                        className="object-fill w-full h-96"
-                        src="https://cdn.pixabay.com/photo/2022/03/20/15/40/nature-7081138__340.jpg"
+                        className="object-fill w-2500px h-900px"
+                        src="https://www.skygodz.com/wp-content/uploads/2023/01/skygodz_slide01.jpg"
                         alt="image slide 1"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     // eslint-disable-next-line @next/next/no-img-element
                     <Image
-                        className="object-fill w-full h-96"
-                        src="https://cdn.pixabay.com/photo/2022/07/24/17/55/wind-energy-7342177__340.jpg"
+                        className="object-fill w-2500px h-900px"
+                        src="https://www.skygodz.com/wp-content/uploads/2023/01/skygodz_slide02.jpg"
                         alt="image slide 2"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        className="object-fill w-full h-96"
-                        src="https://cdn.pixabay.com/photo/2022/07/26/03/35/jogger-7344979__340.jpg"
+                        className="object-fill w-2500px h-900px"
+                        src="https://www.skygodz.com/wp-content/uploads/2023/01/skygodz_slide03.jpg"
                         alt="image slide 3"
                     />
                 </SwiperSlide>

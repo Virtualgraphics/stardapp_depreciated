@@ -11,7 +11,9 @@ const HomePage: NextPage = () => {
   
     
     <Default pageName="SKY GODZ-We Were Never Alone">
+
     <Home />
+
     </Default>
   
 
