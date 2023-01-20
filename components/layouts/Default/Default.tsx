@@ -1,9 +1,9 @@
 import { FC, ReactNode } from 'react';
 
-
+import { NavBar } from '@/components/modules/navbar';
 
 import Head from 'next/head';
-import Sidebar from '@/components/modules/Sidebar';
+
 
 const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, pageName }) => (
   <>
@@ -12,7 +12,7 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
 
-
+<NavBar/>
    
 
     <div className="w-full p-0 m-0">
