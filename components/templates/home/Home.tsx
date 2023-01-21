@@ -1,5 +1,6 @@
 import * as React from 'react'
 import FrontSlider from '../frontslider/FrontSlider';
+import { Hero } from '../hero';
 
 
   
@@ -13,7 +14,8 @@ import FrontSlider from '../frontslider/FrontSlider';
    <div>  
    
    <FrontSlider/>
-   <div className="text-white text-3xl"> SKY GODZ Stardapp</div> 
+
+   <Hero />
 
 </div>
 )
