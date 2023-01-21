@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Proza+Libre:wght@400;500&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +10,7 @@ body
 {
 width: 100%; 
 height: 100%;  
-background-image: linear-gradient(#0b1337, #010162);
+background-image: linear-gradient(#0b1337, #010162) ;
 
 }
 
@@ -16,7 +19,8 @@ background-image: linear-gradient(#0b1337, #010162);
 .app {
   height: 100%;
   width: 100%;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Cizel", Decorative;
+  font-family: "Proza Libre", sans-serif;
 }
 
 .connect {

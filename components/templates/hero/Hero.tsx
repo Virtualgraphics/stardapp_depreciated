@@ -1,15 +1,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 
 const Hero = () => {
     return (
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="bg-indigo-500/20 px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 rounded-3xl" >
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="lg:pr-10">
             
-            <h5 className="mb-4 text-4xl font-extrabold leading-none text-yellow-100" >
-              Sky Godz Stardapp
-              <br className="hidden md:block" />
+            <h1 className="mb-4 text-4xl font-extrabold leading-none text-yellow-100 font-Cinzel" >
+              SKY GODZ STARDAPP
+              <br className="hidden md:block" /> </h1>
+
+              <h5 className="mb-4 text-2xl font-extrabold leading-none text-yellow-100 font-Cinzel" >
               The powerful Story of the Universe
               
             </h5>
@@ -21,9 +24,13 @@ const Hero = () => {
             multi-player RPG Metaverse, elements of DeFi and visual novels.
             </p>
             <hr className="mb-5 border-gray-300" />
+          
+
+          <div className='w-40 mt-10'>
+           <ConnectWallet/>
            </div>
 
-           
+           </div>
 
 
           <div>
