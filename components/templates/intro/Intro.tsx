@@ -14,44 +14,53 @@ const Intro = () => {
           <div>
             <img
               className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
-              src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+              src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE_game.jpg"
               alt=""
             />
             <h5 className=" text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
-              A slice of heaven
+              STARGAZER GAME
             </h5>
             <p className="text-white">
               O for awesome, this chocka full cuzzie is as rip-off as a cracker.
               Meanwhile, in behind the bicycle shed, Hercules Morse.
             </p>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
+  Find out more
+</button>
           </div>
           <div>
             <img
               className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
-              src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE_anime.jpg"
               alt=""
             />
             <h5 className="text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
-              Disrupt inspire
+             STAR VISITORS ANIME
             </h5>
             <p className="text-white">
               be sure to note that in my log. Smooth as an androids bottom,
               eh, Data? When has justice ever been as simple as a rule book?
             </p>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
+ Coming soon
+</button>
           </div>
           <div>
             <img
               className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE_webtoon.jpg"
               alt=""
             />
             <h5 className="text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
-              Storage shed
+              STARSEED WEBTOON
             </h5>
             <p className="text-white">
               Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
               suscipit leo. Carpe diem vulputate est nec commodo rutrum.
             </p>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
+  Coming soon
+</button>
           </div>
         </div>
       </div>
