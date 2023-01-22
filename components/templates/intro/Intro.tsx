@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Intro = () => {
     return (
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -24,6 +26,7 @@ const Intro = () => {
               O for awesome, this chocka full cuzzie is as rip-off as a cracker.
               Meanwhile, in behind the bicycle shed, Hercules Morse.
             </p>
+            
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
   Find out more
 </button>

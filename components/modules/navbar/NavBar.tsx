@@ -3,13 +3,13 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
-
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'HOMEWORLD', href: '#', current: true },
-  { name: 'GAMES', href: '#', current: false },
-  { name: 'NFTs', href: '#', current: false },
-  { name: 'TOKENS', href: '#', current: false },
+  { name: 'HOMEWORLD', href:'/', current: true },
+  { name: 'GAMES', href: 'games', current: false },
+  { name: 'NFTs', href: 'nftmint', current: false },
+  { name: 'TOKENS', href: 'token', current: false },
 ]
 
 function classNames(...classes) {
@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-black">
+    <Disclosure as="nav" className="bg-black fixed top-0 z-30 w-full">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

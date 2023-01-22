@@ -11,21 +11,14 @@ import Modal from '@/components/modules/particles';
 
    
 
-
-
    <div>  
 
-
-   
    <FrontSlider/>
 
    <Hero />
 
-   <Modal/>
-
    <Intro />
 
-   
 
 </div>
 )

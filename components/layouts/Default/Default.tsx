@@ -14,7 +14,7 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
 
-<NavBar/>
+<NavBar />
    
 
 
@@ -23,7 +23,7 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
     </div>
 
     <Footer/>
-    
+    <Modal/>
   </>
 );
 
