@@ -5,15 +5,19 @@ import 'react-slideshow-image/dist/styles.css'
 const fadeImages = [
   {
     url: 'https://www.skygodz.com/wp-content/uploads/2023/01/skygodz_slide01.jpg',
-    caption: 'First Slide'
+    caption: ''
   },
   {
     url: 'https://www.skygodz.com/wp-content/uploads/2023/01/skygodz_slide02.jpg',
-    caption: 'Second Slide'
+    caption: ''
   },
   {
     url: 'https://www.skygodz.com/wp-content/uploads/2023/01/skygodz_slide03.jpg',
-    caption: 'Third Slide'
+    caption: ''
+  },
+  {
+    url: 'https://www.skygodz.com/wp-content/uploads/2023/01/app_slide_logo.jpg',
+    caption: ''
   },
 ];
 
@@ -23,7 +27,7 @@ const FrontSlider = () => {
       <Fade>
         {fadeImages.map((fadeImage, index) => (
           <div key={index}>
-            <img style={{ width: '100%' }} src={fadeImage.url} />
+            <img style={{ width: '100%' }} src={fadeImage.url} alt="Slider"/>
             <h2>{fadeImage.caption}</h2>
           </div>
         ))}

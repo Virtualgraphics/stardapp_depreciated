@@ -4,6 +4,7 @@ import { NavBar } from '@/components/modules/navbar';
 import { Footer } from '@/components/modules/footer';
 
 import Head from 'next/head';
+import Modal from '@/components/modules/particles';
 
 
 const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, pageName }) => (
@@ -16,12 +17,13 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
 <NavBar/>
    
 
+
     <div className="w-full h-full p-0 m-0 bg-gradient-to-r from-black to-indigo-800">
       {children}
     </div>
 
     <Footer/>
-   
+    
   </>
 );
 
