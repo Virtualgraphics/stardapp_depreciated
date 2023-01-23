@@ -14,23 +14,27 @@ const Token = () => {
 
   
       return (
-        <div className="justify-center px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 ">
 
-          <div className="max-w-4xl sm:text-center sm:mx-auto">
 
-          <Image
-               className="w-96 mt-10"
-                src="/assets/star_divider.svg"
-                alt="Star Divider"
-                width={10}
-                height={10}
-              />
+        <div className="justify-center px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:pt-20">
+        <div className="max-w-screen-sm sm:text-center sm:mx-auto">
+          
+  
+            <div className="m-auto w-96 py-5">
+            <Image
+            className="m-auto w-96 py-2"
+            src="/assets/star_divider.svg"
+            alt="Star Divider"
+            width={1260}
+            height={750}
+          />
+            </div>
 
             <h2 className="m-auto mb-4 text-3xl font-bold tracking-tight text-yellow-100 sm:text-4xl sm:leading-none sm:m-auto font-Cinzel py-5">
             SKY GODZ: Tokens
             </h2>
             <hr className="w-full  border-yellow-200" />
-            <p className="text-base text-white lg:text-2xl md:text-lg sm:px-4 py-5 font-Proza">
+            <p className="text-base text-white lg:text-lg  md:text-lg sm:px-4 py-8 font-Proza">
            Claim your SKY GODZ LOTUS and STARDUST tokens below and play the Stargazer Games. 
             </p>
 
@@ -51,7 +55,7 @@ const Token = () => {
 
 <div className="mt-5 mb-5 max-w-sm">
           <input 
-    id="lg"
+    id="1"
     type="text"  
     placeholder="Enter amount to claim" 
 className="flex-grow  h-12 px-2 mb-3 text-blue-200 transitiom duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-deep-purple-900 focus:border-teal-accent-700 focus:outline-none focus:shadow-outline"
@@ -61,9 +65,9 @@ className="flex-grow  h-12 px-2 mb-3 text-blue-200 transitiom duration-200 borde
     
     />
     </div>
-
+<div className="px-10 py-4 m-auto">
     <Web3Button
-          className="bg-blue text-white max-w-sm mb-5"
+        
        
           contractAddress="0xd23342d614a1ff1d7bc84b9041C8615532D55C6D"
           action={(contract) => contract.erc20.claim(amountToClaim)}
@@ -73,8 +77,7 @@ className="flex-grow  h-12 px-2 mb-3 text-blue-200 transitiom duration-200 borde
           Claim LOTUS
         
           </Web3Button>
-
-              
+          </div>
               </div>
 
 
@@ -89,20 +92,41 @@ className="flex-grow  h-12 px-2 mb-3 text-blue-200 transitiom duration-200 borde
               height={750}
             />
 
-<h1 className="text-white font-bold text-2xl">STARDUST Token</h1>
+<h1 className="text-white font-bold text-lg">STARDUST Token</h1>
 <h2 className="text-white text-lg">Claim your STARDUST Tokens</h2>
+<div className="mt-5 mb-5 max-w-sm">
+          <input 
+    id="1"
+    type="text"  
+    placeholder="Enter amount to claim" 
+className="flex-grow  h-12 px-2 mb-3 text-blue-200 transitiom duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-deep-purple-900 focus:border-teal-accent-700 focus:outline-none focus:shadow-outline"
+            
+   
+    onChange={(e) => setAmountToClaim(e.target.value)}
+    
+    />
+    </div>
+<div className="px-10 py-4 m-auto">
+    <Web3Button
+        
+       
+          contractAddress="0xd23342d614a1ff1d7bc84b9041C8615532D55C6D"
+          action={(contract) => contract.erc20.claim(amountToClaim)}
+          onSuccess={() => alert("Claimed!")}
+          onError={(err) => alert(err)}
+        >
+          Claim LOTUS
+        
+          </Web3Button>
+          </div>
               </div>
               </div>
-
-        
-        
-  
-
 </div>
 
-          <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 mt-auto sm:grid-cols-2">
+<div className="py-40 justify-items-center">
+      <div className="w-4/5 m-auto grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3 mt-10 sm:grid-cols-2">
         <div className="duration-300 transform bg-blue-400 border-l-4 border-deep-purple-accent-900 hover:-translate-y-2 rounded-2xl">
-          <div className="h-full p-5  rounded-r shadow-sm">
+          <div className="h-full p-5 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">The doctor said</h6>
             <p className="text-sm text-gray-900">
               Sportacus andrew weatherall goose Refined gentlemen super mario
@@ -129,11 +153,15 @@ className="flex-grow  h-12 px-2 mb-3 text-blue-200 transitiom duration-200 borde
             </p>
           </div>
         </div>
-        
+        </div>
+        <div className="m-auto pt-14 w-4/5 justify-center">
+        <p className=" text-white ">
+              Bro ipsum dolor sit amet gaper backside single track, manny Bike
+              epic clipless. Schraeder drop gondy.
+            </p></div>
       </div>
-
-
  </div>
+ 
 
       );
     };

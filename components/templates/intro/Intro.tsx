@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Intro = () => {
     return (
@@ -14,10 +15,12 @@ const Intro = () => {
         </div>
         <div className="grid gap-6 row-gap-5 lg:grid-cols-3">
           <div>
-            <img
-              className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
-              src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE_game.jpg"
-              alt=""
+          <Image
+              className="object-cover w-full h-56 mb-6 rounded-2xl shadow-3xl sm:h-96 shadow-lg"
+              src="/assets/app_frontIMAGE_game.jpg"
+              alt="Main Image"
+              width={1260}
+              height={750}
             />
             <h5 className=" text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
               STARGAZER GAME
@@ -26,16 +29,18 @@ const Intro = () => {
               O for awesome, this chocka full cuzzie is as rip-off as a cracker.
               Meanwhile, in behind the bicycle shed, Hercules Morse.
             </p>
-            
+            <Link href="/games">
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
   Find out more
-</button>
+</button></Link>
           </div>
           <div>
-            <img
-              className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
-              src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE_anime.jpg"
-              alt=""
+          <Image
+              className="object-cover w-full h-56 mb-6 rounded-2xl shadow-3xl sm:h-96 shadow-lg"
+              src="/assets/app_frontIMAGE_anime.jpg"
+              alt="Main Image"
+              width={1260}
+              height={750}
             />
             <h5 className="text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
              STAR VISITORS ANIME
@@ -44,15 +49,18 @@ const Intro = () => {
               be sure to note that in my log. Smooth as an androids bottom,
               eh, Data? When has justice ever been as simple as a rule book?
             </p>
+           
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
  Coming soon
 </button>
           </div>
           <div>
-            <img
-              className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
-              src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE_webtoon.jpg"
-              alt=""
+          <Image
+              className="object-cover w-full h-56 mb-6 rounded-2xl shadow-3xl sm:h-96 shadow-lg"
+              src="/assets/app_frontIMAGE_webtoon.jpg"
+              alt="Main Image"
+              width={1260}
+              height={750}
             />
             <h5 className="text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
               STARSEED WEBTOON

@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-black fixed top-0 z-30 w-full">
+    <Disclosure as="nav" className="bg-black fixed top-0 z-30 w-full border-b-2 border-b-indigo-200/30">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -36,16 +36,14 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-9 w-auto lg:hidden"
-                    src="https://www.skygodz.com/wp-content/uploads/2022/10/skygodz_logo_thin.svg"
-                    alt="Sky Godz Logo"
-                  />
-                  <img
-                    className="hidden h-9 w-20 lg:block"
-                    src="https://www.skygodz.com/wp-content/uploads/2022/10/skygodz_logo_thin.svg"
-                    alt="Sky Godz Logo"
-                  />
+                <Image
+              className=" h-7 w-auto lg:h20 sm:w-auto justfy-left"
+              src="/assets/skygodz_logo_thin.svg"
+              alt="Sky Godz Logo"
+              width={1260}
+              height={750}
+            />
+                  
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -54,7 +52,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-indigo-500/30 text-white' : 'text-gray-300 hover:bg-indigo-500/30 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}

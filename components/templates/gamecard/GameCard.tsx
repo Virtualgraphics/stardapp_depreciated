@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 const GameCard = () => {
 
@@ -7,11 +7,13 @@ const GameCard = () => {
         <div className="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
           <div className="transition duration-300 transform bg-blue-900/10 rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
             <div className="relative">
-              <img
-                className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
-                src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontGAME.jpg"
-                alt=""
-              />
+            <Image
+              className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
+              src="/assets/app_frontGAME.jpg"
+              alt="Stargate Game"
+              width={1260}
+              height={750}
+            />
               <div className="absolute inset-0 bg-blue-900 bg-opacity-25" />
             </div>
             <div className="px-6 py-8 border border-t-0 rounded-b sm:px-8">
@@ -33,11 +35,13 @@ const GameCard = () => {
           </div>
           <div className="transition duration-300 transform bg-blue-900/10 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
             <div className="relative">
-              <img
-                className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
-                src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE_game.jpg"
-                alt=""
-              />
+            <Image
+              className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
+              src="/assets/app_frontIMAGE_game.jpg"
+              alt="Stargazer Game"
+              width={1260}
+              height={750}
+            />
               <div className="absolute inset-0 bg-blue-900 bg-opacity-25" />
             </div>
             <div className="px-6 py-8 border border-t-0 rounded-b-lg sm:px-8">

@@ -9,19 +9,18 @@ const NFTMint = () => {
 
   return (
     <div className="justify-center px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-screen-sm sm:text-center sm:mx-auto">
-        
+    <div className="max-w-screen-sm sm:text-center sm:mx-auto">
+      
 
-          <div className="m-auto w-96 ">
-
-          <Image
-                className="w-full lg:h-96 sm:h-96"
-                src="/assets/star_divider.svg"
-                alt="Star Divider"
-                width={10}
-                height={10}
-              />
-          </div>
+        <div className="m-auto w-96 py-5">
+        <Image
+        className="m-auto w-96 py-2"
+        src="/assets/star_divider.svg"
+        alt="Star Divider"
+        width={1260}
+        height={750}
+      />
+        </div>
     
         <h2 className="m-auto mb-4 text-3xl font-bold tracking-tight text-yellow-100 sm:text-4xl sm:leading-none sm:m-auto font-Cinzel py-5">
         SKY GODZ: Stargazer Games

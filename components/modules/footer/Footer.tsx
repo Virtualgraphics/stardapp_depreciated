@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -8,7 +8,13 @@ const Footer = () => {
            
            
             <div className="w-40">
-            <img alt="logo" src="https://www.skygodz.com/wp-content/uploads/2023/01/enDAPP_logo.svg" />
+            <Image
+              className="w-40"
+              src="/assets/enDAPP_logo.svg"
+              alt="Endapp Logo"
+              width={1260}
+              height={750}
+            />
             </div>
             
             <p className="text-white my-5 text-lg" >

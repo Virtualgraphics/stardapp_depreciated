@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { GameCard } from '../gamecard';
+import Image from 'next/image'
 
 const Games = () => {
  
@@ -9,10 +10,12 @@ const Games = () => {
             
     
               <div className="m-auto w-96 py-5">
-              <img
-            
-              src="https://www.skygodz.com/wp-content/uploads/2022/12/star_divider.svg"
-              alt="stars"
+              <Image
+              className="m-auto w-96 py-2"
+              src="/assets/star_divider.svg"
+              alt="Star Divider"
+              width={1260}
+              height={750}
             />
               </div>
         
@@ -28,8 +31,13 @@ const Games = () => {
 
 <div className='flex items-center justify-center'>
 
-<img  src="https://www.skygodz.com/wp-content/uploads/2022/11/game_cover.png"
-            alt="stars" />
+<Image
+              className="flex items-center justify-center"
+              src="/assets/game_cover.png"
+              alt="Stargate Game"
+              width={1260}
+              height={750}
+            />
             </div>
 <div className='flex items-center justify-center'>
 <h1 className='text-yellow-100 text-2xl font-bold mt-10'>
