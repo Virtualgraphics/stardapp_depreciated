@@ -5,6 +5,8 @@ import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 
 const Hero = () => {
     return (
+
+      <>
       <div className="bg-indigo-500/20 px-4 py-10 mx-auto sm:max-w-xl md:max-w-full mt-none lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 rounded-3xl mt-10" >
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="lg:pr-10">
@@ -32,7 +34,7 @@ const Hero = () => {
            <ConnectWallet/> 
 </div>
 <Link href="/games">
-           <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
+<button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
             Mint NFT</button>
             </Link>
 
@@ -42,17 +44,21 @@ const Hero = () => {
            </div>
 
 
-          <div>
-            <img
-              className="object-cover w-full h-56 rounded shadow-3xl sm:h-96"
-              src="https://www.skygodz.com/wp-content/uploads/2023/01/app_frontIMAGE.jpg"
-              alt=""
+          <div className='shadow-2xl'>
+            <Image
+              className="object-cover w-full h-56 rounded-3xl shadow-3xl sm:h-96 shadow-lg"
+              src="/assets/app_frontIMAGE.jpg"
+              alt="Main Image"
+              width={1260}
+              height={750}
             />
 
 
           </div>
         </div>
       </div>
+
+      </>
     );
   };
 

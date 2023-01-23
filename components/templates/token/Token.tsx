@@ -2,28 +2,30 @@ import {MediaRenderer, useContract, useContractMetadata, Web3Button} from "@thir
 import { EditionDrop, Erc1155 } from '@thirdweb-dev/sdk';
 import { BigNumber } from "ethers";
 import { useState } from "react";
-
+import { FC, useEffect } from 'react';
+import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
+import Image from 'next/image'
+import React from 'react';
 
 
 const Token = () => {
   const { contract: tokenDropContract} = useContract("0xd23342d614a1ff1d7bc84b9041C8615532D55C6D");
   const [amountToClaim, setAmountToClaim] = useState("");
 
-    
-
+  
       return (
-        <div className="justify-center px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="max-w-screen-sm sm:text-center sm:mx-auto">
-            
-    
-              <div className="m-auto w-96 py-5">
-              <img
-            
-              src="https://www.skygodz.com/wp-content/uploads/2022/12/star_divider.svg"
-              alt="stars"
-            />
-              </div>
-        
+        <div className="justify-center px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 ">
+
+          <div className="max-w-4xl sm:text-center sm:mx-auto">
+
+          <Image
+               className="w-96 mt-10"
+                src="/assets/star_divider.svg"
+                alt="Star Divider"
+                width={10}
+                height={10}
+              />
+
             <h2 className="m-auto mb-4 text-3xl font-bold tracking-tight text-yellow-100 sm:text-4xl sm:leading-none sm:m-auto font-Cinzel py-5">
             SKY GODZ: Tokens
             </h2>
@@ -33,38 +35,72 @@ const Token = () => {
             </p>
 
 <div className="grid grid-cols-2 gap-20 place-content-stretch w-full h-96">
+
 <div className="bg-indigo-900  rounded-2xl  " >
-<div className="m-auto w-64 rounded-full mt-5 ">
-              <img
-            
-              src="https://www.skygodz.com/wp-content/uploads/2023/01/token_lotus750.jpg"
-              alt="lotus"
+
+<Image
+              className="p-10 rounded-full shadow-3xl"
+              src="/assets/token_lotus750.jpg"
+              alt="Lotus"
+              width={1260}
+              height={750}
             />
 
-          <h1 className="text-white text-2xl">LOTUS Token</h1>
+          <h1 className="text-white font-bold text-2xl ">LOTUS Token</h1>
           <h2 className="text-white text-lg">Claim your LOTUS Tokens</h2>
-              </div>
-              
 
-</div>
-<div className="bg-indigo-900  rounded-2xl">
-<div className="m-auto w-64 rounded-full mt-5">
-              <img 
+<div className="mt-5 mb-5 max-w-sm">
+          <input 
+    id="lg"
+    type="text"  
+    placeholder="Enter amount to claim" 
+className="flex-grow  h-12 px-2 mb-3 text-blue-200 transitiom duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-deep-purple-900 focus:border-teal-accent-700 focus:outline-none focus:shadow-outline"
             
-              src="https://www.skygodz.com/wp-content/uploads/2023/01/token_stardust750.jpg"
-              alt="lotus"
+   
+    onChange={(e) => setAmountToClaim(e.target.value)}
+    
+    />
+    </div>
+
+    <Web3Button
+          className="bg-blue text-white max-w-sm mb-5"
+       
+          contractAddress="0xd23342d614a1ff1d7bc84b9041C8615532D55C6D"
+          action={(contract) => contract.erc20.claim(amountToClaim)}
+          onSuccess={() => alert("Claimed!")}
+          onError={(err) => alert(err)}
+        >
+          Claim LOTUS
+        
+          </Web3Button>
+
+              
+              </div>
+
+
+<div className="bg-indigo-900  rounded-2xl">
+
+
+<Image
+              className="p-10 rounded-full"
+              src="/assets/token_stardust750.jpg"
+              alt="Stardust"
+              width={1260}
+              height={750}
             />
 
-<h1 className="text-white text-2xl">STARDUST Token</h1>
+<h1 className="text-white font-bold text-2xl">STARDUST Token</h1>
 <h2 className="text-white text-lg">Claim your STARDUST Tokens</h2>
               </div>
+              </div>
+
+        
+        
+  
 
 </div>
 
-</div>
-</div>
-
-          <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 mt-20 sm:grid-cols-2">
+          <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 mt-auto sm:grid-cols-2">
         <div className="duration-300 transform bg-blue-400 border-l-4 border-deep-purple-accent-900 hover:-translate-y-2 rounded-2xl">
           <div className="h-full p-5  rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">The doctor said</h6>

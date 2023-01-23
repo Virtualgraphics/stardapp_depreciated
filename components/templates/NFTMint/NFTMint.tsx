@@ -1,6 +1,7 @@
 
 import { FC, useEffect } from 'react';
 import { useState } from "react";
+import Image from 'next/image'
 
 
 const NFTMint = () => {
@@ -11,12 +12,15 @@ const NFTMint = () => {
       <div className="max-w-screen-sm sm:text-center sm:mx-auto">
         
 
-          <div className="m-auto w-96 py-5">
-          <img
-        
-          src="https://www.skygodz.com/wp-content/uploads/2022/12/star_divider.svg"
-          alt="stars"
-        />
+          <div className="m-auto w-96 ">
+
+          <Image
+                className="w-full lg:h-96 sm:h-96"
+                src="/assets/star_divider.svg"
+                alt="Star Divider"
+                width={10}
+                height={10}
+              />
           </div>
     
         <h2 className="m-auto mb-4 text-3xl font-bold tracking-tight text-yellow-100 sm:text-4xl sm:leading-none sm:m-auto font-Cinzel py-5">
