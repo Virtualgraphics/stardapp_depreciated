@@ -25,11 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/nftmint": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/nftmint.js"
-    ],
     "/token": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

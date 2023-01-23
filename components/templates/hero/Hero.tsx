@@ -33,7 +33,7 @@ const Hero = () => {
 <div className='w-40 '>
            <ConnectWallet/> 
 </div>
-<Link href="/games">
+<Link href="/nftmint">
 <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
             Mint NFT</button>
             </Link>

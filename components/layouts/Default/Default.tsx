@@ -23,7 +23,7 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
     </div>
 
     <Footer/>
-    <Modal/>
+   
   </>
 );
 
