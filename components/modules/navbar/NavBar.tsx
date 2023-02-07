@@ -8,6 +8,8 @@ import Link from 'next/link'
 const navigation = [
   { name: 'HOMEWORLD', href:'/', current: true },
   { name: 'GAMES', href: 'games', current: false },
+  { name: 'ANIME', href: 'anime', current: false },
+  { name: 'WEBTOON', href: 'webtoon', current: false },
   { name: 'NFTs', href: 'nftmint', current: false },
   { name: 'TOKENS', href: 'token', current: false },
 ]
