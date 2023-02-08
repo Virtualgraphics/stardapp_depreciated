@@ -2,9 +2,31 @@
 import { FC, useEffect } from 'react';
 import { useState } from "react";
 import Image from 'next/image'
+import {
+  MediaRenderer,
+  useActiveClaimConditionForWallet,
+  useAddress,
+  useClaimConditions,
+  useClaimedNFTSupply,
+  useClaimerProofs,
+  useClaimIneligibilityReasons,
+  useContract,
+  useContractMetadata,
+  useUnclaimedNFTSupply,
+  Web3Button,
+} from "@thirdweb-dev/react";
+import { BigNumber, utils } from "ethers";
+
+const myNftDropContractAddress = "0x399C182D429c527e6621F72902698882a41125CE";
 
 
 const NFTMint = () => {
+
+  const { contract: nftDrop } = useContract(myNftDropContractAddress);
+  const address = useAddress();
+const [quantity, setQuantity] = useState(1);
+const { data: contractMetadata } = useContractMetadata(nftDrop);
+const claimConditions = useClaimConditions(nftDrop);
     
 
   return (
@@ -54,17 +76,16 @@ const NFTMint = () => {
   <Image
               className=" rounded-2xl shadow-3xl border-white mb-6"
               src="/assets/teka.jpg"
-              alt="Feline"
+              alt="Teka"
               width={750}
               height={750}
             />
 
           <h1 className="text-yellow-100 font-bold text-xl flex items-center justify-center">LOTUS Token</h1>
           <h2 className="text-white text-md pt-2 pb-4 flex items-center justify-center">Claim LOTUS Tokens</h2>
+          
           <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold px-4 rounded m-auto flex items-center justify-center">
             Coming soon</button>
-  
-  
 
   </div>
 
@@ -74,15 +95,31 @@ const NFTMint = () => {
   <Image
               className=" rounded-2xl shadow-3xl border-white mb-6"
               src="/assets/1.png"
-              alt="Teka"
+              alt="Feline"
               width={750}
               height={750}
             />
 
           <h1 className="text-yellow-100 font-bold text-xl flex items-center justify-center">LOTUS Token</h1>
           <h2 className="text-white text-md pt-2 pb-4 flex items-center justify-center">Claim LOTUS Tokens</h2>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold px-4 rounded m-auto flex items-center justify-center">
-            Coming soon</button>
+          <Web3Button accentColor='lightblue'
+          contractAddress={nftDrop?.getAddress() || ""}
+          action={(cntr) => cntr.erc721.claim(quantity)}
+       
+          onError={(err) => {
+            console.error(err);
+            alert("Error claiming NFTs");
+          }}
+          onSuccess={() => {
+            setQuantity(1);
+            alert("Successfully claimed NFTs");
+          }}
+        >
+        
+          Claim NFT
+        </Web3Button>
+
+
 
   </div>
 
