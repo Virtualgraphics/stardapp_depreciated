@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from 'next/image'
 import React from 'react'
 
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player'
 
 
 const Anime = () => {
@@ -26,7 +26,7 @@ const Anime = () => {
         </div>
     
         <h2 className="m-auto mb-4 text-3xl font-bold tracking-tight text-yellow-100 sm:text-4xl sm:leading-none sm:m-auto font-Cinzel py-5">
-        SKY GODZ: Stargazer Games
+        SKY GODZ: Star Visitor Anime
         </h2>
         <hr className="w-full  border-yellow-200" />
         <p className="text-base text-white lg:text-xl md:text-lg sm:px-4 py-5 font-Proza">
@@ -34,21 +34,29 @@ const Anime = () => {
         </p>
        
       </div>
-      
-    <div className="flex items-center justify-center  max-w-3xl">
-      <div className='player-wrapper'>
 
-<ReactPlayer className='react-player '
-          url="https://youtu.be/xzZVB0qB38I"/>
+      <div className='flex items-center justify-center '>
+      <Image
+              className="flex items-center justify-center w-765"
+              src="/assets/teaser_thumb.jpg"
+              alt="Teaser"
+              width={766}
+              height={750}
+            />
+     </div>
 
-<p className="text-base text-white lg:text-xl md:text-lg sm:px-4 py-5 font-Proza">
+<p className="text-base text-white lg:text-xl md:text-lg sm:px-4 py-5 font-Proza flex items-center justify-center">
         STAR VISITORS: Episode 1
         </p>
 
-        <div className='bg-white h-10'></div>
-        <p className='text-white font-semibold text-sm'>Continue watching and play with more episodes</p>
+        <div className='bg-white h-40 flex items-center justify-center m-auto py-8 w-7/12'></div>
 
-      <div className="grid grid-cols-3 gap-4 h-10">
+        <div className='h-32 flex items-center justify-center m-auto w-96 py-2'>
+
+<p className='text-yellow-200 font-semibold text-md '>Continue watching and play with more episodes</p></div>
+
+      <div className="grid grid-cols-3 gap-8 w-8/12 m-auto ">
+
 <div className=' bg-yellow-200 p-4 rounded-lg'>
 <h1>STAR VISITORS EP 2</h1>
 <p>Enki, Enlil and Nin arrive at the Maputo base and Sargon is not happy about the visitors.</p>
@@ -71,12 +79,12 @@ const Anime = () => {
 
     </div>
    
-    </div>
 
 
 
 
-</div>
+
+
 
 
 
