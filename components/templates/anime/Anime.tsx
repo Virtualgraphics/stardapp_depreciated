@@ -39,7 +39,7 @@ const Anime = () => {
       <div className='player-wrapper'>
 
 <ReactPlayer className='react-player '
-          url='https://youtu.be/xzZVB0qB38I'/>
+          url="https://youtu.be/xzZVB0qB38I"/>
 
 <p className="text-base text-white lg:text-xl md:text-lg sm:px-4 py-5 font-Proza">
         STAR VISITORS: Episode 1

@@ -26,6 +26,7 @@
     "next": "13.1.2",
     "postcss": "^8.4.21",
     "react": "18.2.0",
+    "react-comic-viewer": "^0.4.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-particles": "^2.8.0",

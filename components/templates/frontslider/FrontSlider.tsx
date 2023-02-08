@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import Image from 'next/image'
 
 const fadeImages = [
   {
@@ -27,7 +28,7 @@ const FrontSlider = () => {
       <Fade>
         {fadeImages.map((fadeImage, index) => (
           <div key={index}>
-            <img style={{ width: '100%' }} src={fadeImage.url} alt="Slider"/>
+           <img style={{ width: '100%' }} src={fadeImage.url} alt="Slider"/>
             <h2>{fadeImage.caption}</h2>
           </div>
         ))}

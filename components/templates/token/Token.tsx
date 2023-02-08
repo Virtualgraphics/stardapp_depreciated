@@ -40,7 +40,7 @@ const Token = () => {
 
 <div className="grid grid-cols-2 gap-20 place-content-stretch w-full h-96">
 
-<div className="bg-indigo-900/20  rounded-2xl w-64 drop-shadow-lg " >
+<div className="bg-indigo-900/20  rounded-2xl w-72 drop-shadow-lg justify-center" >
 
 <Image
               className="p-10 rounded-full shadow-3xl"
@@ -53,7 +53,7 @@ const Token = () => {
           <h1 className="text-yellow-100 font-bold text-2xl ">LOTUS Token</h1>
           <h2 className="text-white text-md py-2">Claim LOTUS Tokens</h2>
 
-<div className="mt-5 mb-5 max-w-sm">
+<div className="mt-5 mb-5 max-w-sm justify-center">
           <input 
     id="1"
     type="text"  
@@ -65,23 +65,14 @@ className="flex-grow  h-10 px-2 mb-3 text-black text-base transitiom duration-20
     
     />
     </div>
-<div className="m-5 w-32 ">
-    <Web3Button
-        
-       
-          contractAddress="0xd23342d614a1ff1d7bc84b9041C8615532D55C6D"
-          action={(contract) => contract.erc20.claim(amountToClaim)}
-          onSuccess={() => alert("Claimed!")}
-          onError={(err) => alert(err)}
-        >
-          Claim LOTUS
-        
-          </Web3Button>
+<div className="justify-center pb-8">
+<button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1 m-auto">
+            Coming soon</button>
           </div>
               </div>
 
 
-<div className="bg-indigo-900/20  rounded-2xl w-64 drop-shadow-lg">
+<div className="bg-indigo-900/20 rounded-2xl w-72 drop-shadow-lg ">
 
 
 <Image
@@ -94,7 +85,10 @@ className="flex-grow  h-10 px-2 mb-3 text-black text-base transitiom duration-20
 
 <h1 className="text-yellow-100 font-bold text-2xl">STARDUST Token</h1>
 <h2 className="text-white text-md py-2">Claim STARDUST Tokens</h2>
-<div className="mt-5 mb-5 max-w-sm">
+
+  
+<div className="mt-5 mb-5 max-w-sm justify-items-center">
+
           <input 
     id="1"
     type="text"  
@@ -106,19 +100,23 @@ className="flex-grow  h-10 px-2 mb-3 text-black text-base transitiom duration-20
     
     />
     </div>
-<div className="m-5 w-32">
-    <Web3Button
+   
+    <div className="justify-center pb-8">
+      <div className="w-52 m-auto">
+    <Web3Button 
         
-       
-          contractAddress="0xd23342d614a1ff1d7bc84b9041C8615532D55C6D"
+         
+          contractAddress="0x94B0E73c4328A53ccc2CdeDbEeB2aF625984Af90"
           action={(contract) => contract.erc20.claim(amountToClaim)}
           onSuccess={() => alert("Claimed!")}
           onError={(err) => alert(err)}
         >
           Claim STARDUST
         
-          </Web3Button>
+          </Web3Button></div>
+         
           </div>
+              
               </div>
               </div>
 </div>
