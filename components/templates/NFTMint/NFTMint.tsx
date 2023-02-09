@@ -52,7 +52,7 @@ const claimConditions = useClaimConditions(nftDrop);
         </p>
       </div>
 
-<div className='grid grid-rows-2 grid-flow-col gap-12  '>
+<div className='grid grid-rows-2 grid-flow-col gap-16  items-center justify-center '>
 
   <div className='bg-indigo-900/20 drop-shadow-lg w-96 rounded-2xl border-blue-100 p-8'>
 
@@ -102,7 +102,9 @@ const claimConditions = useClaimConditions(nftDrop);
 
           <h1 className="text-yellow-100 font-bold text-xl flex items-center justify-center">LOTUS Token</h1>
           <h2 className="text-white text-md pt-2 pb-4 flex items-center justify-center">Claim LOTUS Tokens</h2>
-          <Web3Button accentColor='lightblue'
+
+          <div className='w-60 flex items-center justify-center m-auto'>
+          <Web3Button accentColor='black'
           contractAddress={nftDrop?.getAddress() || ""}
           action={(cntr) => cntr.erc721.claim(quantity)}
        
@@ -117,9 +119,7 @@ const claimConditions = useClaimConditions(nftDrop);
         >
         
           Claim NFT
-        </Web3Button>
-
-
+        </Web3Button></div>
 
   </div>
 
@@ -137,18 +137,54 @@ const claimConditions = useClaimConditions(nftDrop);
           <h2 className="text-white text-md pt-2 pb-4 flex items-center justify-center">Claim LOTUS Tokens</h2>
           <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold px-4 rounded m-auto flex items-center justify-center">
             Coming soon</button>
-
-
   </div>
-  
+</div>
 
+<div className=" pt-14 m-auto  justify-center">
+<h1 className=" text-white text-lg text-center">
+              Bro ipsum dolor sit amet gaper backside single track, manny Bike
+              epic clipless. Schraeder drop gondy.
+            </h1></div>
+
+<div className="py-4 flex items-center justify-center">
+      <div className="w-4/5 m-auto grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3 mt-10 sm:grid-cols-2">
+        <div className="duration-300 transform bg-blue-900 border-l-4 border-deep-purple-accent-900 hover:-translate-y-2 rounded-2xl">
+          <div className="h-full p-5 rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5 text-blue-300">The doctor said</h6>
+            <p className="text-sm text-white">
+              Sportacus andrew weatherall goose Refined gentlemen super mario
+              des lynam alpha trion zap rowsdower.
+            </p>
+          </div>
+        </div>
+        <div className="duration-300 transform bg-blue-900 border-l-4 border-deep-purple-accent-400 hover:-translate-y-2 rounded-2xl">
+          <div className="h-full p-5  rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5 text-blue-300">Skate ipsum dolor</h6>
+            <p className="text-sm text-white">
+              Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div className="duration-300 transform bg-blue-900 border-l-4 border-deep-purple-accent-400 hover:-translate-y-2 rounded-2xl">
+          <div className="h-full p-5  rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5 text-blue-300">
+              Baseball ipsum dolor
+            </h6>
+            <p className="text-sm text-white">
+              Bro ipsum dolor sit amet gaper backside single track, manny Bike
+              epic clipless. Schraeder drop gondy.
+            </p>
+          </div>
+        </div>
+        </div></div>
 
 
 </div>
 
 
 
-</div>
+       
+
 
   );
 };

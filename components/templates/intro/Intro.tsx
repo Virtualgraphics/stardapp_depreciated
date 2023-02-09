@@ -14,7 +14,7 @@ const Intro = () => {
           </p>
         </div>
         <div className="grid gap-6 row-gap-5 lg:grid-cols-3">
-          <div>
+          <div >
           <Image
               className="object-cover w-full h-56 mb-6 rounded-2xl shadow-3xl sm:h-96 shadow-lg"
               src="/assets/app_frontIMAGE_game.jpg"
@@ -22,17 +22,22 @@ const Intro = () => {
               width={1260}
               height={750}
             />
-            <h5 className=" text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
+            <p className=" flex items-center justify-center m-auto text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
               STARGAZER GAME
-            </h5>
-            <p className="text-white">
+            </p>
+            <p className="text-white text-center justify-center">
               O for awesome, this chocka full cuzzie is as rip-off as a cracker.
               Meanwhile, in behind the bicycle shed, Hercules Morse.
             </p>
+
+            <div className=" flex items-center justify-center">
             <Link href="/games">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
+            <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
   Find out more
-</button></Link>
+</button></Link></div>
+
+
+
           </div>
           <div>
           <Image
@@ -42,17 +47,17 @@ const Intro = () => {
               width={1260}
               height={750}
             />
-            <h5 className="text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
+            <h5 className="flex items-center justify-center m-auto text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
              STAR VISITORS ANIME
             </h5>
-            <p className="text-white">
+            <p className="text-white text-center">
               be sure to note that in my log. Smooth as an androids bottom,
               eh, Data? When has justice ever been as simple as a rule book?
             </p>
-           
+            <div className=" flex items-center justify-center">
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
  Coming soon
-</button>
+</button> </div>
           </div>
           <div>
           <Image
@@ -62,16 +67,18 @@ const Intro = () => {
               width={1260}
               height={750}
             />
-            <h5 className="text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
+            <h5 className="flex items-center justify-center m-auto text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
               STARSEED WEBTOON
             </h5>
-            <p className="text-white">
+            <p className="text-white text-center">
               Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
               suscipit leo. Carpe diem vulputate est nec commodo rutrum.
             </p>
+            <div className=" flex items-center justify-center">
+            
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
   Coming soon
-</button>
+</button> </div>
           </div>
         </div>
       </div>
