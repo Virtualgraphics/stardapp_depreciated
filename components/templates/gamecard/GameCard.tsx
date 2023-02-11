@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const GameCard = () => {
 
@@ -25,12 +26,12 @@ const GameCard = () => {
                 accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut
                 perspiciatis unde.
               </p>
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-              >
-                Coming soon
-              </button>
+
+              <Link href="/stargatelyra">
+<button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
+            Play Game</button>
+            </Link>
+
             </div>
           </div>
           <div className="transition duration-300 transform bg-blue-900/10 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
@@ -53,12 +54,10 @@ const GameCard = () => {
                 accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut
                 perspiciatis unde.
               </p>
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-              >
-              Coming soon
-              </button>
+              <Link href="/stargazerrpg">
+<button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
+            Play Game</button>
+            </Link>
             </div>
           </div>
         </div>
