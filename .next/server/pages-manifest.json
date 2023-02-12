@@ -2,5 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/webtoon": "pages/webtoon.js"
+  "/stargatelyra": "pages/stargatelyra.js",
+  "/games": "pages/games.js",
+  "/stargazerrpg": "pages/stargazerrpg.js"
 }

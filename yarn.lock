@@ -7763,6 +7763,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-unity-webgl@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "react-unity-webgl@npm:9.4.0"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 9044aed9b6b49fbf1ac08e0af53dc18130a719bdf9960db77705484e6cf3e87d5c676078806ebf4f22d7391daf3b66bed3807e6b65ddfef8387147c719d877bd
+  languageName: node
+  linkType: hard
+
 "react-youtube@npm:^10.1.0":
   version: 10.1.0
   resolution: "react-youtube@npm:10.1.0"
@@ -8349,6 +8358,7 @@ __metadata:
     react-player: ^2.11.0
     react-slick: ^0.29.0
     react-slideshow-image: ^4.2.0
+    react-unity-webgl: ^9.4.0
     react-youtube: ^10.1.0
     swiper: ^8.4.6
     tailwindcss: ^3.2.4

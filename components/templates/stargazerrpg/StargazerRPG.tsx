@@ -1,9 +1,21 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import React from "react";
+import { Unity, useUnityContext } from "react-unity-webgl";
+
+
 
 const StargazerRPG = () => {
+
+  const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
+    loaderUrl: "build/skygodzWEB.loader.js",
+    dataUrl: "build/skygodzWEB.data",
+    frameworkUrl: "build/skygodzWEB.framework.js",
+    codeUrl: "build/skygodzWEB.wasm",
+  });
  
     return (
+
         <div className="justify-center px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-screen-sm sm:text-center sm:mx-auto">
             
@@ -28,12 +40,16 @@ const StargazerRPG = () => {
            
           </div>
 
+<div>
 
+<Unity unityProvider={unityProvider} />
+
+</div>
 
 <div className="flex justify-center">
 <p className='text-white text-lg'>Technical details, white paper and tokenomics are coming soon and will be published on our website.</p>
 </div>
- </div>
+ </div> 
 
       );
     };
