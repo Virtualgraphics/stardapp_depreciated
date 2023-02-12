@@ -7,7 +7,7 @@ const WebtoonPlayer = () => {
         "/assets/0.jpg",
         "/assets/1.jpg",
         "/assets/2.jpg",
-      
+        
        
     ];
 
@@ -27,7 +27,8 @@ const WebtoonPlayer = () => {
                 <div style={{ 'backgroundImage': `url(${images[2]})` }}>
                   </div>
             </div>
-          
+
+            
 
         </Slide>
     );

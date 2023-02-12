@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/stargatelyra": [
+    "/webtoon": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/stargatelyra.js"
+      "static/chunks/pages/webtoon.js"
     ]
   },
   "ampFirstPages": []
