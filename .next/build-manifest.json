@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/stargazerrpg": [
+    "/games": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/stargazerrpg.js"
+      "static/chunks/pages/games.js"
     ]
   },
   "ampFirstPages": []
