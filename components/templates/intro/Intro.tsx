@@ -3,14 +3,13 @@ import Image from 'next/image'
 
 const Intro = () => {
     return (
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
-          <p className="text-yellow-100 mb-1 text-xs font-semibold tracking-wide uppercase md:mb-2">
-            New History
+          <p className="text-yellow-100 mb-1 text-3xl font-semibold tracking-wide uppercase md:mb-2 font-Cinzel">
+          Stargazer NFT Game and Collection
           </p>
-          <p className="text-base text-yellow-100 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          <p className="text-base font-semibold text-white md:text-lg">
+       Collect NFTs and tokens to use in our games, animes and webtoons. Create a community ecosystem that entertains and rewards.
           </p>
         </div>
         <div className="grid gap-6 row-gap-5 lg:grid-cols-3">
@@ -25,9 +24,8 @@ const Intro = () => {
             <p className=" flex items-center justify-center m-auto text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
               STARGAZER GAME
             </p>
-            <p className="text-white text-center justify-center">
-              O for awesome, this chocka full cuzzie is as rip-off as a cracker.
-              Meanwhile, in behind the bicycle shed, Hercules Morse.
+            <p className="text-white text-center justify-center font-semibold">
+            Play the fun and immersive SKY GODZ - Stargazer RPG and Defi game on your PC, the web or on your mobile device.
             </p>
 
             <div className=" flex items-center justify-center">
@@ -50,9 +48,8 @@ const Intro = () => {
             <h5 className="flex items-center justify-center m-auto text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
              STAR VISITORS ANIME
             </h5>
-            <p className="text-white text-center">
-              be sure to note that in my log. Smooth as an androids bottom,
-              eh, Data? When has justice ever been as simple as a rule book?
+            <p className="text-white text-center font-semibold">
+            Experience and participate in the anime series about the Ancient Astronauts who came to earth to become the gods of our forefathers. 
             </p>
             <div className=" flex items-center justify-center">
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
@@ -70,9 +67,8 @@ const Intro = () => {
             <h5 className="flex items-center justify-center m-auto text-yellow-100 mb-2 text-xl font-bold leading-none sm:text-2xl">
               STARSEED WEBTOON
             </h5>
-            <p className="text-white text-center">
-              Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
-              suscipit leo. Carpe diem vulputate est nec commodo rutrum.
+            <p className="text-white text-center font-semibold">
+            Read about the exciting history of the Great Lyran and Orion Wars and the creation of the Galactic Federation.
             </p>
             <div className=" flex items-center justify-center">
             

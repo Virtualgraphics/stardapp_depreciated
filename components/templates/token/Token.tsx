@@ -114,51 +114,49 @@ className="flex-grow  h-10 px-2 mb-3 text-black text-base transitiom duration-20
           Claim STARDUST
         
           </Web3Button></div>
-         
-        
-              
-              </div>
+         </div>
               </div>
 </div>
 
+
+
+
 <div className="py-32  justify-items-center">
+
+<div className=" pt-14 m-auto  justify-center">
+<h1 className=" text-white text-lg text-center font-semibold">
+              Use your SKY GODZ tokens for the following cool things:
+            </h1></div>
+
       <div className="w-4/5 m-auto grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3 mt-10 sm:grid-cols-2">
         <div className="duration-300 transform bg-blue-900 border-l-4 border-deep-purple-accent-900 hover:-translate-y-2 rounded-2xl">
           <div className="h-full p-5 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5 text-blue-300">The doctor said</h6>
+            <h6 className="mb-2 font-semibold leading-5 text-blue-300">Earn rewards in the RPG</h6>
             <p className="text-sm text-white">
-              Sportacus andrew weatherall goose Refined gentlemen super mario
-              des lynam alpha trion zap rowsdower.
+              Get rewards for missions and quests successfully accomplished in the Stargazer RPG and trade tokens for in-game NFTs.
             </p>
           </div>
         </div>
         <div className="duration-300 transform bg-blue-900 border-l-4 border-deep-purple-accent-400 hover:-translate-y-2 rounded-2xl">
           <div className="h-full p-5  rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5 text-blue-300">Skate ipsum dolor</h6>
+            <h6 className="mb-2 font-semibold leading-5 text-blue-300">Power up your Stargate</h6>
             <p className="text-sm text-white">
-              Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Use the Stardust tokens to claim cosmic energy sources for your Stargate and get more STAR as a reward.
             </p>
           </div>
         </div>
         <div className="duration-300 transform bg-blue-900 border-l-4 border-deep-purple-accent-400 hover:-translate-y-2 rounded-2xl">
           <div className="h-full p-5  rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5 text-blue-300">
-              Baseball ipsum dolor
+            <h6 className="mb-2 font-semibold leading-5 text-blue-300">Vote for your stories
+              
             </h6>
             <p className="text-sm text-white">
-              Bro ipsum dolor sit amet gaper backside single track, manny Bike
-              epic clipless. Schraeder drop gondy.
+              Use the tokens to participate in the anime and webtoons and get rewarded for a story path well-chosen.
             </p>
           </div>
         </div>
         </div>
 
-
-        <div className=" pt-14 w-4/5 justify-center mx-auto">
-        <h1 className=" text-white text-lg text-center">
-              Bro ipsum dolor sit amet gaper backside single track, manny Bike
-              epic clipless. Schraeder drop gondy.
-            </h1></div>
       </div>
  </div>
  

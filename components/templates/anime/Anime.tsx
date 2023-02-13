@@ -48,15 +48,41 @@ the animated series, is their story...
 
      </div>
 
-<p className="text-base text-white lg:text-xl md:text-lg sm:px-4 py-5 font-Proza flex items-center justify-center">
-        STAR VISITORS: Episode 1
+<p className="text-base text-white lg:text-lg md:text-lg sm:px-4 py-5 font-Proza flex items-center justify-center">
+        Watch STAR VISITORS: Episode 1 now and cast your vote:
         </p>
 
-        <div className='bg-white h-40 flex items-center justify-center m-auto py-8 w-7/12'></div>
+        <div className='bg-indigo-500/20  m-auto p-6 w-8/12 rounded-3xl'>
+
+<div className='bg-blue-200  justify-center p-3 rounded-2xl font-semibold text-center'>
+
+<p>After what he did, will Sargon be upset about the arrival of the Anunnaki royal siblings?</p>
+
+</div>
+
+<div>
+
+  <p className='text-white text-sm text-center p-4'>Delegate your tokens and cast your vote below:</p>
+</div>
+
+
+<div className='grid grid-cols-3 gap-12 m-auto w-8/12 '>
+
+<div><button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
+            Agree</button></div>
+<div><button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
+            Disagree</button></div>
+<div><button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
+            Abstain</button></div>
+
+            </div>
+
+        </div>
+
 
         <div className='h-32 flex items-center justify-center m-auto py-2'>
 
-<p className='text-yellow-200 font-semibold text-center text-xl'>Continue watching and play with more episodes</p></div>
+<p className='text-yellow-200 font-semibold text-center text-xl'>Watch more episodes, cast your vote and get rewards:</p></div>
 
       <div className="grid grid-cols-3 gap-8 w-8/12 m-auto ">
 
@@ -70,7 +96,7 @@ the animated series, is their story...
             />
   
 <h1 className="text-md text-center font-semibold text-yellow-200 pt-4 pb-2">STAR VISITORS EP 2</h1>
-<p className="text-sm text-center font-normal text-white mb-4">Enki, Enlil and Nin arrive at the Maputo base and Sargon is not happy about the visitors.</p>
+<p className="text-sm text-center font-normal text-white mb-4">Enki, Enlil and Nin arrive at the Maputo base and Sargon is not happy about the visitors but has already made a plan.</p>
 <div className="flex items-center justify-center m-auto">
 <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold px-4 rounded mt-1">
             Coming soon</button></div>

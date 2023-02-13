@@ -15,11 +15,11 @@ const Hero = () => {
               SKY GODZ STARDAPP
               <br className="hidden md:block" /> </h1>
 
-              <h5 className="mb-4 text-2xl font-extrabold leading-none text-yellow-100 font-Cinzel" >
+              <h5 className="mb-4 text-2xl font-extrabold leading-none text-white font-Cinzel" >
               The powerful Story of the Universe
               
             </h5>
-            <p className="mb-6 text-white">
+            <p className="mb-6 text-white font-semibold">
             SKY GODZ is an anime-style, science fiction transmedia property 
             with a decentralized NFT Metaverse game, as well as an anime and 
             graphic novel series deployed on the blockchain. The game is using
@@ -30,12 +30,10 @@ const Hero = () => {
           
 <div className='grid gap-4 grid-cols-2 align-middle self-auto mt-10'>
          
-<div className='w-40 '>
-           <ConnectWallet/> 
-</div>
+
 <Link href="/nftmint">
 <button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
-            Mint NFT</button>
+            Get Started</button>
             </Link>
 
 

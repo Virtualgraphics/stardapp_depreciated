@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+
+
 const StargateLyra = () => {
  
     return (
@@ -23,38 +25,23 @@ const StargateLyra = () => {
             </h2>
             <hr className="w-full  border-yellow-200" />
             <p className="text-base text-white lg:text-xl md:text-lg sm:px-4 py-5 font-Proza">
-            Use your NFT Alien Character in a top-down single player RPG directly in your browser and collect tokens while powering up your Stargate in the DeFi Game.
+            Use your NFT alien avatars and Stardust Tokens to power up your Stargate and get back to your Homeworld. Have fun and earn STARDUST Token and swap them for LOTUS Tokens.
             </p>
             </div>
 
 
 
-<div className='container bg-blue-700 p-6 rounded-3xl mb-8'>
-  <div className='grid grid-cols-3 gap-4 m-auto '>
-<div className=' bg-blue-500 rounded-2xl'>1</div>
-<div className=' bg-blue-500 rounded-2xl'>2</div>
-<div className=' bg-blue-500 rounded-2xl'>3</div>
- </div>
-
- <div className='grid grid-row-2 gap-4 my-4 '>
-<div className=' bg-blue-500 rounded-2xl justify-center'>
-  <p className="text-center font-Josefin text-lg font-semibold">
-  Your Available Energy Sources</p>
-  </div>
-<div className=' bg-blue-500 rounded-2xl'>2</div>
-</div>
-<div>
-  <h1 className="text-center font-Josefin text-lg font-semibold">Cosmic Energy Power Startion</h1>
-</div>
-
-<div className='grid grid-cols-5 gap-4 m-auto '>
-<div className=' bg-blue-500 rounded-2xl'>1</div>
-<div className=' bg-blue-500 rounded-2xl'>2</div>
-<div className=' bg-blue-500 rounded-2xl'>3</div>
-<div className=' bg-blue-500 rounded-2xl'>4</div>
-<div className=' bg-blue-500 rounded-2xl'>5</div>
- </div>
-
+<div className=' bg-blue-700/20 p-6 rounded-3xl mb-8'>
+  
+<div className="py-2">
+              <Image
+              className="m-auto py-2 rounded-full"
+              src="/assets/lyra-stargate.jpg"
+              alt="Stargate"
+              width={750}
+              height={750}
+            />
+              </div>
 
 </div>
 
