@@ -39,10 +39,24 @@ const StargazerRPG = () => {
             </p>
            
           </div>
+          <Image
+              className="m-auto"
+              src="/assets/rpg_avyon.png"
+              alt="RPG Avyon"
+              width={1000}
+              height={850}
+            />
+          <div>
 
-<div>
 
-<Unity unityProvider={unityProvider} />
+          </div>
+
+<div className="flex justify-center m-auto py-8">
+
+<Link href="https://friendly-scone-fb52f2.netlify.app">
+<button className="bg-blue-500 hover:bg-blue-700 text-white w-40 h-10 font-bold  px-4 rounded mt-1">
+            Play Game</button>
+            </Link>
 
 </div>
 
