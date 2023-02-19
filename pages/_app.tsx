@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
 
   
-    <ThirdwebProvider desiredChainId={ChainId.Mumbai}>    
+    <ThirdwebProvider activeChain="mumbai">   
           <Component {...pageProps} />
           </ThirdwebProvider> 
   
